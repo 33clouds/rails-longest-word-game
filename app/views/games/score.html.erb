@@ -1,0 +1,7 @@
+<% if !word_exists?(@guess.upcase) %>
+  not exists
+<% elsif only_letters?(@guess.upcase, @letters) %>
+  alles gut!
+<% else %>
+  scheisse
+<% end %>
